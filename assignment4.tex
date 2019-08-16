@@ -1,0 +1,84 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\title{Assess Employee Performance  [This would be a process in the HR Knowledge area]}
+\author{
+\textsc{Jai rino lumi C0738738}\\
+\textsc{Rajdeep Kaur C0739309}\\
+\textsc{Sandeep Kaur Kanda C0740033}\\
+\textsc{Manpreet Kaur C0736236}\\
+\textsc{Beant Kaur C0731867}\\[2mm]}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+ Employee Performance Assessment Software tool
+
+
+\section{Code: index.html}
+\begin{verbatim}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Employee Performance Assessment</title>
+  </head>
+  <body>
+    <h1>Employee Performance Assessment</h1>
+ 
+    <img src="./electron.jpg" width="250">
+    <p><a href="./rating.html">Cick here to view previous rating history! </a></p>
+    <form>
+      Employee name:<br>
+      <input type="text" name="empname" value="">
+      <br>
+      Enter feedback:<br>
+      <input type="text" name="feedback" value=""><br>
+      Rating: <br>
+      <input type="radio" name="rating" value="poor"> Poor Performance<br>
+  <input type="radio" name="rating" value="average"> Average Performance<br>
+  <input type="radio" name="rating" value="Good"> Good Performance
+      <br><br>
+      <input type="submit" value="Submit" onclick="alert('Feedback added successfully!')">
+    </form>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
+
+\end{verbatim}
+\section{Code:rating.html}
+\begin{verbatim}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Employee Rating history</title>
+ 
+  </head>
+  <body>
+    <h1>Employee Rating history</h1>
+ 
+    <img src="./electron.jpg" width="250">
+   
+    <table class="tab">
+        <tr>
+           <th>Employee name </th> 
+          <td class="first">jai </td>
+        </tr>
+        <tr>
+            <th>Employee feedback </th> 
+          <td class="second">Good work!</td>
+        </tr>
+      </table>​​​
+      
+    
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
+
+\end{verbatim}
+\end{document}
